@@ -1,91 +1,91 @@
-# #Calculator App 
-# import math
+#Calculator App 
+import math
 
-# while True :
+while True :
     
     
-#     print ("______________________-------------------------------------Menu-------------------------------------------______________________________________")
+    print ("______________________-------------------------------------Menu-------------------------------------------______________________________________")
 
-#     Choice = int(input("Entre your choice :"))
+    Choice = int(input("Entre your choice :"))
 
 
-#     if  Choice == 1  :
-#      NUM1 = (int(input("Entre First Number :")))
-#      NUM2 =(int(input("Entre Second Number :")))
-#      print("ADDITION:",NUM1 + NUM2)
+    if  Choice == 1  :
+     NUM1 = (int(input("Entre First Number :")))
+     NUM2 =(int(input("Entre Second Number :")))
+     print("ADDITION:",NUM1 + NUM2)
     
-#     elif Choice == 2 :
-#         try: 
-#            NUM1 =  (int(input("Enter First number:")))
-#            NUM2 = (int (input("Enter Second number:")))
-#            print("SUBTRACTION:",NUM1 - NUM2)
-#         except:
-#            print("Invaild Syntax :takee input as int")
+    elif Choice == 2 :
+        try: 
+           NUM1 =  (int(input("Enter First number:")))
+           NUM2 = (int (input("Enter Second number:")))
+           print("SUBTRACTION:",NUM1 - NUM2)
+        except:
+           print("Invaild Syntax :takee input as int")
             
-#     elif Choice == 3 :
-#         try:
-#             NUM1 = int (input("Enter First Number:"))
-#             NUM2 = int (input("Enter Second Number:"))
-#             print("MULTIPLICATION:",NUM1 * NUM2 )
-#         except:
-#             print("Invaild Syntax :takee input as int")
-#     elif Choice == 4:
-#         try:
-#             NUM1 = int (input("Enter First Number:"))
-#             NUM2 = int (input("EnterSecond Number:"))
-#             if NUM2 == 0 :
-#                 print("Cannot divided by zero")
-#             else:
-#                 print("DIVISION:",NUM1 / NUM2 )
-#         except:
-#             print("Invaild Syntax :takee input as int")
-#     elif Choice == 5 :
-#         try :
-#             NUM1 = int (input("Enter First Number :"))
-#             NUM2 = int(input("Enter Second Number :"))
-#             print("FLOOR DIVISON:",NUM1 // NUM2)
-#         except:
-#            print("Invaild Syntax :takee input as int") 
-#     elif Choice == 6 :
-#         try:
-#             NUM1 = int (input("Enter First Number :"))
-#             NUM2 = int(input("EnterSecond Number :"))
-#             print("Modulus",NUM1 % NUM2)  
-#         except:
-#             print("Invaild Syntax :takee input as int")    
-#     elif Choice == 7 :
-#         try:
-#             NUM1 = int (input("Enter First Number :"))
-#             NUM2 = int(input("Enter Second Number :"))
-#             print("EXPONENT:",NUM1 ** NUM2)
-#         except:
-#             print("Invaild Syntax :takee input as int")
+    elif Choice == 3 :
+        try:
+            NUM1 = int (input("Enter First Number:"))
+            NUM2 = int (input("Enter Second Number:"))
+            print("MULTIPLICATION:",NUM1 * NUM2 )
+        except:
+            print("Invaild Syntax :takee input as int")
+    elif Choice == 4:
+        try:
+            NUM1 = int (input("Enter First Number:"))
+            NUM2 = int (input("EnterSecond Number:"))
+            if NUM2 == 0 :
+                print("Cannot divided by zero")
+            else:
+                print("DIVISION:",NUM1 / NUM2 )
+        except:
+            print("Invaild Syntax :takee input as int")
+    elif Choice == 5 :
+        try :
+            NUM1 = int (input("Enter First Number :"))
+            NUM2 = int(input("Enter Second Number :"))
+            print("FLOOR DIVISON:",NUM1 // NUM2)
+        except:
+           print("Invaild Syntax :takee input as int") 
+    elif Choice == 6 :
+        try:
+            NUM1 = int (input("Enter First Number :"))
+            NUM2 = int(input("EnterSecond Number :"))
+            print("Modulus",NUM1 % NUM2)  
+        except:
+            print("Invaild Syntax :takee input as int")    
+    elif Choice == 7 :
+        try:
+            NUM1 = int (input("Enter First Number :"))
+            NUM2 = int(input("Enter Second Number :"))
+            print("EXPONENT:",NUM1 ** NUM2)
+        except:
+            print("Invaild Syntax :takee input as int")
 
-#     elif Choice == 8 :
-#         try :
-#            NUMBER = int (input("Enter First Number :"))
-#            PERCENTAGE= int(input("Enter Second Number :"))
-#            print(NUMBER*PERCENTAGE / 100)
-#         except:
-#             print("Invaild Syntax :takee input as int")
+    elif Choice == 8 :
+        try :
+           NUMBER = int (input("Enter First Number :"))
+           PERCENTAGE= int(input("Enter Second Number :"))
+           print(NUMBER*PERCENTAGE / 100)
+        except:
+            print("Invaild Syntax :takee input as int")
         
-#     elif Choice == 9 :
-#         try :
-#             NUM1 = int(input("Entre a number:"))
-#             print(NUM1 ** 2)
-#         except:
-#             print("Invaild Syntax :takee input as int")
-#     elif Choice == 10 :
-#         try:
-#            NUM2 = int(input("Entre a number:"))
-#            print(math.sqrt(NUM2))
-#         except:
-#             print("Invaild Syntax :takee input as int")
-#     elif Choice == 11 :
-#         print("Program ended")
-#         break 
-# else :
-#     print("INVALID OPERATION")
+    elif Choice == 9 :
+        try :
+            NUM1 = int(input("Entre a number:"))
+            print(NUM1 ** 2)
+        except:
+            print("Invaild Syntax :takee input as int")
+    elif Choice == 10 :
+        try:
+           NUM2 = int(input("Entre a number:"))
+           print(math.sqrt(NUM2))
+        except:
+            print("Invaild Syntax :takee input as int")
+    elif Choice == 11 :
+        print("Program ended")
+        break 
+else :
+    print("INVALID OPERATION")
 
 
 #caluculate 
