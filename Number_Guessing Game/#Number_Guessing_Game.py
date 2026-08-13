@@ -1,10 +1,10 @@
 #Number Guessing Game
 
 import random
-Best_score = None
-Play_again = "Y"
+best_score = None
+play_again = "Y"
 
-while Play_again == "Y" :
+while play_again == "Y" :
 ############################LET US GUESS THE NUMBERS(Name of the Game)#################
     print("*******************************")
 
@@ -17,64 +17,71 @@ while Play_again == "Y" :
     print("3.Hard 1-1000")
     
     try:
-      Choice = int(input("Enter your Choice:"))
+      choice = int(input("Enter your Choice:"))
     except ValueError :
         print("Invalid Choice ")
         continue
    
-    if Choice == 1 :
+    if choice == 1 :
         maximum_number = 100
-        print("Easy mode selected")
-    elif Choice == 2 :
+        print("Easy mode selected\nGuess number from 1 - 100")
+    elif choice == 2 :
         maximum_number = 500
-        print("Medium mode selected") 
-    elif Choice == 3 :
+        print("Medium mode selected\n Guess number from 1 - 500") 
+    elif choice == 3 :
         maximum_number = 1000
-        print("Hard mode selected:") 
+        print("Hard mode selected\n Guess numbers from 1 - 1000") 
     else: 
         print("Invalid choice. Please enter 1, 2, or 3.")
         continue
      
-    Secret_number = random.randint(1, maximum_number)
+    secret_number = random.randint(1, maximum_number)
 
-    Attempts = 0
-    try:
-        Guess_the_number = int(input("Enter your guessing number:"))
-    except ValueError:
-        print("Invalid Guess")
-        continue
-    Attempts += 1
-
-    while Secret_number != Guess_the_number:
-    
-        if Guess_the_number > Secret_number:
-            print("Greater than the secret number")
-        elif  Secret_number > Guess_the_number:
-            print("Smaller than the secret number")
-        try :
-            Guess_the_number = int(input("Enter your guessing number:"))
+    attempts = 0
+    while True:
+        try:
+            guess_the_number = int(input("Enter your guessing number:"))
+            break
         except ValueError:
-            print("Invalid input")
-            continue
+            print("Invalid Guess")
+        
+    attempts += 1
+
+    while secret_number != guess_the_number:
+    
+        if guess_the_number > secret_number:
+            print("Greater than the secret number")
+        elif  secret_number > guess_the_number:
+            print("Smaller than the secret number")
             
-        Attempts+= 1
+            
+        while True :
+            try :
+                guess_the_number = int(input("Enter your guessing number:"))
+                break
+            except ValueError:
+                
+                print("Invalid input")
+
+            
+        attempts+= 1
         
 
-    if Secret_number == Guess_the_number:
+    if secret_number == guess_the_number:
         print("You Win\nYou guessed the number right")
 
-    print("Attempts :",Attempts)
+    print("Attempts :",attempts)
 
 
 
-    if Best_score is None : 
-        Best_score = Attempts
-    elif Attempts < Best_score:
-        Best_score = Attempts
+    if best_score is None : 
+        best_score = attempts
+    elif attempts < best_score:
+        best_score = attempts
     
-    print("Best_score :",Best_score ) 
+    print("best_score :",best_score ) 
     
-    Play_again = input("Do you want to play again :? ").upper()
+    play_again = input("Do you want to play again ? ").upper()
     
     
     

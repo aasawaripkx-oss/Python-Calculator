@@ -59,16 +59,8 @@ while True :
             print("Modulus",NUM1 % NUM2)  
         except:
             print("Invaild Syntax :takee input as int")
-#####EXPONENT#####    
-    elif Choice == 7 :
-        try:
-            NUM1 = int (input("Enter First Number :"))
-            NUM2 = int(input("Enter Second Number :"))
-            print("EXPONENT:",NUM1 ** NUM2)
-        except:
-            print("Invaild Syntax :takee input as int")
 #####PERCENTAGE#####
-    elif Choice == 8 :
+    elif Choice == 7 :
         try :
            NUMBER = int (input("Enter First Number :"))
            PERCENTAGE= int(input("Enter Second Number :"))
@@ -76,14 +68,14 @@ while True :
         except:
             print("Invaild Syntax :takee input as int")
 #####SQUARE #####     
-    elif Choice == 9 :
+    elif Choice == 8 :
         try :
             NUMBER = int(input("Entre a number:"))
             print(NUMBER ** 2)
         except:
             print("Invaild Syntax :takee input as int")
 #####SQUARE ROOT #####
-    elif Choice == 10 :
+    elif Choice == 9 :
         try:
            NUMBER = int(input("Entre a number:"))
            print(math.sqrt(NUMBER))
@@ -93,26 +85,3 @@ while True :
 else :
     print("INVALID OPERATION")
 
-
-# #calculator App 2 
-
-# a = float(input("Entre a number1:"))
-# b= float(input("Entre a number2:"))
-# op = input("Entre a Operator :(+,-,*,/,//,%,**):")
-
-# if op == "+":
-#     print(a+b)
-# elif op == "-":
-#     print(a-b)
-# elif op == "*":
-#     print(a*b)
-# elif op == "/":
-#     print(a/b)
-# elif op == "//":
-#     print(a//b)
-# elif op == "%" :
-#     print(a%b)
-# elif op == "**":
-#     print(a**b)
-# else:
-#     print("Invalid output")
